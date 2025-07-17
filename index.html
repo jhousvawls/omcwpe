@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WP Engine & Omnicom Partnership</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+        }
+        .font-lora {
+            font-family: 'Lora', serif;
+        }
+        /* Custom color palette from WP Engine Brand Guidelines */
+        .bg-brand-navy { background-color: #002447; }
+        .text-brand-navy { color: #002447; }
+        .bg-brand-blue { background-color: #006BD6; }
+        .text-brand-blue { color: #006BD6; }
+        .hover\:bg-brand-blue-dark:hover { background-color: #0052a3; }
+        .text-brand-teal { color: #0ECAD6; }
+        .border-brand-teal { border-color: #0ECAD6; }
+        .hover\:text-brand-teal-dark:hover { color: #0DA9B4; }
+
+        /* Active nav link style */
+        .nav-link-active {
+            color: #0ECAD6;
+            font-weight: 600;
+        }
+        
+        /* Accordion styles */
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="text-gray-700">
+
+    <!-- Header & Navigation -->
+    <header id="header" class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-200">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold text-brand-navy">
+                WP Engine <span class="text-brand-teal">&</span> Omnicom
+            </a>
+            <div class="hidden md:flex space-x-6 lg:space-x-8 text-sm font-medium">
+                <a href="#why-wp-engine" class="nav-link text-gray-600 hover:text-brand-teal transition-colors duration-300">Why WP Engine</a>
+                <a href="#solutions" class="nav-link text-gray-600 hover:text-brand-teal transition-colors duration-300">Agency Solutions</a>
+                <a href="#products" class="nav-link text-gray-600 hover:text-brand-teal transition-colors duration-300">Products</a>
+                <a href="#headless" class="nav-link text-gray-600 hover:text-brand-teal transition-colors duration-300">Headless</a>
+                <a href="#success-stories" class="nav-link text-gray-600 hover:text-brand-teal transition-colors duration-300">Success Stories</a>
+                <a href="#resources" class="nav-link text-gray-600 hover:text-brand-teal transition-colors duration-300">Resources</a>
+            </div>
+            <a href="#contact" class="hidden md:inline-block bg-brand-blue text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-brand-blue-dark transition-colors duration-300 shadow-sm">
+                Get Started
+            </a>
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-gray-600 hover:bg-gray-100">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="#why-wp-engine" class="block py-2 text-gray-600 hover:text-brand-teal">Why WP Engine</a>
+            <a href="#solutions" class="block py-2 text-gray-600 hover:text-brand-teal">Agency Solutions</a>
+            <a href="#products" class="block py-2 text-gray-600 hover:text-brand-teal">Products</a>
+            <a href="#headless" class="block py-2 text-gray-600 hover:text-brand-teal">Headless</a>
+            <a href="#success-stories" class="block py-2 text-gray-600 hover:text-brand-teal">Success Stories</a>
+            <a href="#resources" class="block py-2 text-gray-600 hover:text-brand-teal">Resources</a>
+            <a href="#contact" class="block w-full text-center mt-2 bg-brand-blue text-white px-5 py-2 rounded-lg text-sm font-semibold hover:bg-brand-blue-dark transition-colors duration-300">
+                Get Started
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- I. Homepage / Welcome -->
+        <section id="home" class="relative py-24 md:py-32 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="font-lora text-4xl md:text-5xl lg:text-6xl font-bold text-brand-navy leading-tight">
+                    Empowering Omnicom to Build, Manage, and Grow Exceptional Digital Experiences with WP Engine.
+                </h1>
+                <p class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-gray-600">
+                    Showcasing WP Engine's position as a global technology company that empowers companies and agencies of all sizes to build, power, manage, and optimize their WordPress websites and applications with confidence.
+                </p>
+            </div>
+        </section>
+
+        <!-- Key Value Propositions -->
+        <section class="py-20 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Card 1 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <svg class="h-10 w-10 text-brand-teal mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg>
+                        <h3 class="font-lora text-xl font-bold text-brand-navy mb-2">Unrivaled Performance</h3>
+                        <p class="text-gray-600">Deliver lightning-fast sites with optimal speed, reliability, and 99.95% uptime for your clients.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <svg class="h-10 w-10 text-brand-teal mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.286zm0 13.036h.008v.008h-.008v-.008z" /></svg>
+                        <h3 class="font-lora text-xl font-bold text-brand-navy mb-2">Enterprise-Grade Security</h3>
+                        <p class="text-gray-600">Benefit from proactive monitoring and robust security measures to protect client sites.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <svg class="h-10 w-10 text-brand-teal mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.125A2.25 2.25 0 014.5 4.875h15A2.25 2.25 0 0121.75 7.125v4.5a2.25 2.25 0 01-2.25 2.25H4.5A2.25 2.25 0 012.25 11.625v-4.5zM3.75 15.75A2.25 2.25 0 016 13.5h12a2.25 2.25 0 012.25 2.25v3.75A2.25 2.25 0 0118 21.75H6a2.25 2.25 0 01-2.25-2.25v-3.75z" /></svg>
+                        <h3 class="font-lora text-xl font-bold text-brand-navy mb-2">Tailored Agency Solutions</h3>
+                        <p class="text-gray-600">Access scalable pricing and managed hosting specifically designed for agencies.</p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                        <svg class="h-10 w-10 text-brand-teal mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12s4.03 8.25 9 8.25z" /><path stroke-linecap="round" stroke-linejoin="round" d="M12 12.75c-1.355 0-2.45-1.1-2.45-2.45S10.645 7.85 12 7.85s2.45 1.1 2.45 2.45-1.1 2.45-2.45 2.45zM15.75 15.75c-1.355 0-2.45-1.1-2.45-2.45S14.395 10.85 15.75 10.85s2.45 1.1 2.45 2.45-1.1 2.45-2.45 2.45zM8.25 15.75c-1.355 0-2.45-1.1-2.45-2.45S6.895 10.85 8.25 10.85s2.45 1.1 2.45 2.45-1.1 2.45-2.45 2.45z" /></svg>
+                        <h3 class="font-lora text-xl font-bold text-brand-navy mb-2">Expert 24/7/365 Support</h3>
+                        <p class="text-gray-600">Leverage award-winning technical expertise whenever you need it, freeing your team to focus on clients.</p>
+                    </div>
+                </div>
+                <div class="mt-12 text-center">
+                    <a href="#" class="inline-block bg-brand-blue text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-brand-blue-dark transition-colors duration-300 shadow-md">
+                        Learn More About WP Engine for Agencies
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust & Experience -->
+        <section class="bg-brand-navy text-white py-16">
+            <div class="container mx-auto px-6 text-center">
+                <p class="font-lora text-2xl md:text-3xl font-semibold">
+                    Trusted by over <span class="text-brand-teal">200,000</span> customers, including more than <span class="text-brand-teal">11,000</span> agencies, with <span class="text-brand-teal">15</span> years of breakthroughs in WordPress hosting.
+                </p>
+            </div>
+        </section>
+
+        <!-- II. Why WP Engine? -->
+        <section id="why-wp-engine" class="py-20 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="font-lora text-3xl md:text-4xl font-bold text-brand-navy">Our Core Difference</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">WP Engine offers a unique platform technology and managed hosting solution specifically optimized for the WordPress CMS.</p>
+                </div>
+                <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                    <div>
+                        <h3 class="font-lora text-2xl font-bold text-brand-navy mb-4">Mission-Critical Reliability</h3>
+                        <div class="space-y-6">
+                            <div>
+                                <h4 class="font-lora font-semibold text-lg text-brand-navy">High Availability Plans</h4>
+                                <p class="text-gray-600 mt-1">Designed to eliminate single points of failure by distributing sites across multiple web servers in different availability zones via a customized AWS Cluster configuration.</p>
+                            </div>
+                            <div>
+                                <h4 class="font-lora font-semibold text-lg text-brand-navy">WP Engine Failover</h4>
+                                <p class="text-gray-600 mt-1">An enterprise-grade disaster recovery solution that ensures business continuity. It automatically moves your site to a working data center with zero data loss (0 RPO) and near-instant recovery (estimated 7-minute RTO).</p>
+                            </div>
+                            <a href="#" class="text-brand-teal font-semibold hover:text-brand-teal-dark">Failover vs. High Availability &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="font-lora text-2xl font-bold text-brand-navy mb-4">Enhanced Security</h3>
+                            <p class="text-gray-600">Enterprise-grade security and proactive monitoring protect sites from threats, complemented by automated WordPress, PHP, and MySQL updates, and daily/on-demand backups.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-lora text-2xl font-bold text-brand-navy mb-4">Cost Efficiency</h3>
+                            <p class="text-gray-600">Understand the true costs of self-hosting, from developer time to security and compliance, and how WP Engine's managed solution can provide significant savings.</p>
+                             <a href="#" class="text-brand-teal font-semibold hover:text-brand-teal-dark mt-2 inline-block">Learn Why WP Engine &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- III. Solutions for Agencies -->
+        <section id="solutions" class="py-20 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="font-lora text-3xl md:text-4xl font-bold text-brand-navy">Tailored for Your Agency's Growth</h2>
+                    <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-600">WP Engine provides hosting solutions designed to help agencies grow and deliver exceptional results for clients, backed by expert support, reliable performance, and flexibility.</p>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="font-lora text-2xl font-bold text-brand-navy mb-6">Agency Partner Program Benefits</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start"><span class="text-brand-teal mr-3 mt-1">&#10003;</span><span><strong class="text-brand-navy">Free Agency Account:</strong> Showcase your work and expertise with a complimentary hosting account.</span></li>
+                            <li class="flex items-start"><span class="text-brand-teal mr-3 mt-1">&#10003;</span><span><strong class="text-brand-navy">Priority Technical Support:</strong> Access advanced technical support and dedicated partner managers.</span></li>
+                            <li class="flex items-start"><span class="text-brand-teal mr-3 mt-1">&#10003;</span><span><strong class="text-brand-navy">Exclusive Earnings:</strong> Benefit from discounted pricing and industry-leading commissions.</span></li>
+                            <li class="flex items-start"><span class="text-brand-teal mr-3 mt-1">&#10003;</span><span><strong class="text-brand-navy">Co-Selling & Lead Generation:</strong> Get direct connections to brands actively seeking agency expertise.</span></li>
+                            <li class="flex items-start"><span class="text-brand-teal mr-3 mt-1">&#10003;</span><span><strong class="text-brand-navy">Enablement & Training:</strong> Access agency-focused webinars, ebooks, and bespoke training.</span></li>
+                            <li class="flex items-start"><span class="text-brand-teal mr-3 mt-1">&#10003;</span><span><strong class="text-brand-navy">Partner Network & Directory:</strong> Feature your agency in the WP Engine Partner Directory.</span></li>
+                        </ul>
+                         <a href="#" class="text-brand-teal font-semibold hover:text-brand-teal-dark mt-6 inline-block">Explore Partner Program Benefits &rarr;</a>
+                    </div>
+                    <div>
+                        <h3 class="font-lora text-2xl font-bold text-brand-navy mb-6">Streamlined Workflows</h3>
+                        <div class="space-y-6">
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h4 class="font-lora font-bold text-lg text-brand-navy">Faster Site Builds</h4>
+                                <p class="text-gray-600 mt-1">Utilize tools like Advanced Custom Fields (ACF), Local, and WP Migrate Pro to build better sites more quickly.</p>
+                            </div>
+                            <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h4 class="font-lora font-bold text-lg text-brand-navy">Effortless Client Management</h4>
+                                <p class="text-gray-600 mt-1">Monitor, automate, and maximize monetization with platform features like site performance insights and Smart Plugin Manager.</p>
+                            </div>
+                             <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
+                                <h4 class="font-lora font-bold text-lg text-brand-navy">Free Managed Migrations</h4>
+                                <p class="text-gray-600 mt-1">Confidently move single complex clients or entire books of business with our free managed migration services.</p>
+                            </div>
+                        </div>
+                        <a href="#" class="text-brand-teal font-semibold hover:text-brand-teal-dark mt-6 inline-block">View Agency Hosting Plans &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IV. Products & Advanced Tools -->
+        <section id="products" class="py-20 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="font-lora text-3xl md:text-4xl font-bold text-brand-navy">Comprehensive Products & Advanced Tools</h2>
+                    <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-600">From best-in-class hosting to cutting-edge AI and developer tools, our platform has you covered.</p>
+                </div>
+
+                <div class="max-w-4xl mx-auto">
+                    <!-- Accordion Item 1: AI Toolkit -->
+                    <div class="accordion-item border-b border-gray-200 py-4">
+                        <button class="accordion-header w-full flex justify-between items-center text-left text-xl font-lora font-semibold text-brand-navy">
+                            <span>WP Engine AI Toolkit</span>
+                            <svg class="accordion-icon h-6 w-6 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                        </button>
+                        <div class="accordion-content mt-4 text-gray-600 space-y-3">
+                            <p>AI-Powered Search, Managed Vector Database, Headless Integration, Recommendations, and enhanced WooCommerce Product Support. A drop-in replacement for native search with typo-tolerance, NLP, and ultra-fast results.</p>
+                            <a href="#" class="text-brand-teal font-semibold hover:text-brand-teal-dark">Learn about the AI Toolkit &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Accordion Item 2: ACF Pro -->
+                    <div class="accordion-item border-b border-gray-200 py-4">
+                        <button class="accordion-header w-full flex justify-between items-center text-left text-xl font-lora font-semibold text-brand-navy">
+                            <span>Advanced Custom Fields (ACF) PRO</span>
+                            <svg class="accordion-icon h-6 w-6 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                        </button>
+                        <div class="accordion-content mt-4 text-gray-600 space-y-3">
+                            <p>A powerful plugin that transforms websites with custom content. ACF PRO offers advanced features crucial for complex projects, including ACF Blocks, Repeater Fields, Flexible Content Fields, and more.</p>
+                            <a href="#" class="text-brand-teal font-semibold hover:text-brand-teal-dark">Get Started with ACF &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Accordion Item 3: Other Tools -->
+                    <div class="accordion-item border-b border-gray-200 py-4">
+                        <button class="accordion-header w-full flex justify-between items-center text-left text-xl font-lora font-semibold text-brand-navy">
+                            <span>Essential Platform Tools</span>
+                            <svg class="accordion-icon h-6 w-6 transform transition-transform duration-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" /></svg>
+                        </button>
+                        <div class="accordion-content mt-4 text-gray-600">
+                            <p>Includes Smart Plugin Manager, Global Edge Security, Website Monitoring, Page Speed Boost, and Application Performance Monitoring to keep your sites fast, secure, and running smoothly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- V. Headless WordPress -->
+        <section id="headless" class="py-20 md:py-24">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-16">
+                    <h2 class="font-lora text-3xl md:text-4xl font-bold text-brand-navy">Headless WordPress: The Future of Digital Engagement</h2>
+                    <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-600">Decouple your backend from the frontend to deliver content via APIs to any device or platform.</p>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <h3 class="font-lora text-2xl font-bold text-brand-navy">Strategic Benefits for Omnicom</h3>
+                        <p class="text-gray-600">Preserve the user-friendly WordPress editing experience while giving developers the freedom to use modern frameworks like Next.js, VueJS, or React.</p>
+                        <ul class="space-y-2">
+                             <li class="flex items-center"><svg class="h-5 w-5 text-brand-teal mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Increased Agility & Scalability</li>
+                             <li class="flex items-center"><svg class="h-5 w-5 text-brand-teal mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Omnichannel Consistency</li>
+                             <li class="flex items-center"><svg class="h-5 w-5 text-brand-teal mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Enhanced Security & Superior Performance</li>
+                             <li class="flex items-center"><svg class="h-5 w-5 text-brand-teal mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Future-Proofing & Innovation Catalyst</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md border border-gray-200">
+                        <h4 class="font-lora text-xl font-bold text-brand-navy mb-4">The State of Headless 2024</h4>
+                        <div class="space-y-4">
+                            <p class="text-gray-600"><strong class="text-brand-teal text-4xl font-lora">73%</strong> of businesses now use headless architecture.</p>
+                            <p class="text-gray-600"><strong class="text-brand-teal text-4xl font-lora">80%</strong> using headless feel ahead of competitors.</p>
+                            <p class="text-gray-600"><strong class="text-brand-teal text-4xl font-lora">80%</strong> engaged an agency for headless implementation.</p>
+                        </div>
+                        <a href="#" class="text-brand-teal font-semibold hover:text-brand-teal-dark mt-6 inline-block">Read The State of Headless Report &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VI. Success Stories -->
+        <section id="success-stories" class="py-20 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="font-lora text-3xl md:text-4xl font-bold text-brand-navy">Award-Winning Partnerships</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">See how WP Engine partners have delivered exceptional results for their clients.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Story 1 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col hover:shadow-2xl transition-shadow duration-300">
+                        <img src="https://placehold.co/600x400/002447/FFFFFF?text=Wpromote" alt="Wpromote Case Study" class="w-full h-48 object-cover">
+                        <div class="p-6 flex-grow">
+                            <h3 class="font-lora font-bold text-lg text-brand-navy">Wpromote</h3>
+                            <p class="text-sm text-gray-500 mb-4">Future-ready Innovation Award</p>
+                            <blockquote class="border-l-4 border-brand-teal pl-4 text-gray-600 italic">
+                                Transformed The New Home Company's website into a high-performance headless homebuying experience.
+                            </blockquote>
+                        </div>
+                    </div>
+                    <!-- Story 2 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col hover:shadow-2xl transition-shadow duration-300">
+                        <img src="https://placehold.co/600x400/006BD6/FFFFFF?text=CRX.Agency" alt="CRX.Agency Case Study" class="w-full h-48 object-cover">
+                        <div class="p-6 flex-grow">
+                            <h3 class="font-lora font-bold text-lg text-brand-navy">CRX.Agency</h3>
+                            <p class="text-sm text-gray-500 mb-4">Sony's Wonderverse Project</p>
+                            <blockquote class="border-l-4 border-brand-teal pl-4 text-gray-600 italic">
+                                Harnessed Headless and WordPress flexibility to create scalable, omnichannel web experiences.
+                            </blockquote>
+                        </div>
+                    </div>
+                     <!-- Story 3 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col hover:shadow-2xl transition-shadow duration-300">
+                        <img src="https://placehold.co/600x400/0ECAD6/FFFFFF?text=Noble+Studios" alt="Noble Studios Case Study" class="w-full h-48 object-cover">
+                        <div class="p-6 flex-grow">
+                            <h3 class="font-lora font-bold text-lg text-brand-navy">Noble Studios</h3>
+                            <p class="text-sm text-gray-500 mb-4">Partner Testimonial</p>
+                            <blockquote class="border-l-4 border-brand-teal pl-4 text-gray-600 italic">
+                                "Building on WP Engine enabled us to concentrate fully on our expertise, knowing everything was being managed by their experts."
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-12">
+                    <a href="#" class="text-brand-teal font-semibold hover:text-brand-teal-dark">View More Case Studies &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- VII. Resources & Support -->
+        <section id="resources" class="py-20 md:py-24">
+             <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="font-lora text-3xl md:text-4xl font-bold text-brand-navy">Comprehensive Expertise & Support</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">Access a wealth of resources and support channels to help you succeed.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+                    <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
+                        <h3 class="font-lora font-bold text-xl text-brand-navy mb-2">Resource Center</h3>
+                        <p class="text-gray-600">Find articles, ebooks, white papers, and FAQs.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
+                        <h3 class="font-lora font-bold text-xl text-brand-navy mb-2">Builder Community</h3>
+                        <p class="text-gray-600">Learn from fellow developers and WP Engine experts.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-lg border border-gray-200">
+                        <h3 class="font-lora font-bold text-xl text-brand-navy mb-2">Product Roadmap</h3>
+                        <p class="text-gray-600">Stay ahead with insights into upcoming enhancements.</p>
+                    </div>
+                </div>
+                <div class="mt-12 text-center">
+                     <a href="#contact" class="inline-block bg-brand-blue text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-brand-blue-dark transition-colors duration-300 shadow-md">
+                        Connect with Our Experts
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIII. Get Started / Contact -->
+        <section id="contact" class="py-20 md:py-24 bg-brand-navy">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="font-lora text-3xl md:text-4xl font-bold text-white">Ready to Get Started?</h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-300">Take the next step to accelerate your agency's growth and deliver unparalleled digital experiences for your clients.</p>
+                </div>
+                <div class="max-w-4xl mx-auto grid sm:grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="bg-white/10 p-8 rounded-xl backdrop-blur-sm border border-white/20">
+                        <h3 class="font-lora text-xl font-bold text-white mb-4">Request a Demo</h3>
+                        <p class="text-gray-300 mb-6">Ideal for discussing specific agency needs and complex requirements.</p>
+                        <a href="#" class="font-semibold text-brand-teal hover:text-white transition-colors duration-300">Schedule Now &rarr;</a>
+                    </div>
+                    <div class="bg-white/10 p-8 rounded-xl backdrop-blur-sm border border-white/20">
+                        <h3 class="font-lora text-xl font-bold text-white mb-4">View Agency Plans</h3>
+                        <p class="text-gray-300 mb-6">Explore customizable hosting plans with enhanced features.</p>
+                        <a href="#" class="font-semibold text-brand-teal hover:text-white transition-colors duration-300">See Plans &rarr;</a>
+                    </div>
+                    <div class="bg-white/10 p-8 rounded-xl backdrop-blur-sm border border-white/20">
+                        <h3 class="font-lora text-xl font-bold text-white mb-4">Become a Partner</h3>
+                        <p class="text-gray-300 mb-6">Apply to unlock exclusive benefits and accelerate your growth.</p>
+                        <a href="#" class="font-semibold text-brand-teal hover:text-white transition-colors duration-300">Apply Today &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 WP Engine & Omnicom Partnership. All Rights Reserved.</p>
+            <p class="text-sm mt-2">This is a conceptual design for demonstration purposes.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for Mobile Menu
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // JavaScript for Accordion
+        const accordionItems = document.querySelectorAll('.accordion-item');
+        accordionItems.forEach(item => {
+            const header = item.querySelector('.accordion-header');
+            const content = item.querySelector('.accordion-content');
+            const icon = item.querySelector('.accordion-icon');
+
+            header.addEventListener('click', () => {
+                // Close other open accordions
+                accordionItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.querySelector('.accordion-content').style.maxHeight = null;
+                        otherItem.querySelector('.accordion-icon').classList.remove('rotate-180');
+                    }
+                });
+
+                // Toggle current accordion
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                    icon.classList.remove('rotate-180');
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    icon.classList.add('rotate-180');
+                }
+            });
+        });
+
+        // JavaScript for Active Nav Link on Scroll
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('header nav a.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) { // 100px offset for header height
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('nav-link-active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('nav-link-active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
